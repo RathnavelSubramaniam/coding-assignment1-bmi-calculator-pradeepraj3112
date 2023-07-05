@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <style>
+    h1{
+    margin-bottom: 10px;
+    font-size: 50px;
+    font-weight: 500;
+    color: white;
+}
+    body{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(52, 52, 71);
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    user-select:none;
+    cursor:pointer;
+}
+.kg{
+  margin-top: 10px;
+  height: 40px;
+ 
+}
+.cm{
+  margin-top: 20px;
+  height: 40px;
+}
+
+button{
+  margin-top: 40px;
+  margin-left: 4%;
+  font-size: 40px;
+  border: 4px solid rgb(29, 169, 172);
+  border-radius: 5px;
+}
+button:hover{
+  background-color: #545353;
+}
+
+form{
+    width: 500px;
+    height: 350px;
+    background-color: #111;
+    border: 50px solid rgb(29, 169, 172);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow:rgb(69, 69, 69) 0px 4px 16px, rgb(69, 69, 69) 0px 8px 32px;
+    color:white;
+    font-size: 50px;
+    text-align: center;
+    line-height: 130px;
+    
+}
+    </style>
+    
+</head>
+<body>
+  <h1>BMI CALCULATOR</h1>
+    <form method="post" action="/">
+      
+        <label for="weight">Weight (kg):</label>
+        <input type="number" name="weight" id="weight" placeholder="Weight" class="kg">
+      <br>
+        <label for="height">Height (cm):</label>
+        <input type="number" name="height" id="height" placeholder="Height" class="cm">
+      <br>
+        <button type="submit">Calculate</button>
+      </form>
+      
+</body>
+</html>
